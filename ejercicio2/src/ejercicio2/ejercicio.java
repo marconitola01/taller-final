@@ -1,4 +1,4 @@
-
+// main desde el cual invocaremos los metodos//
 package ejercicio2;
 
 public class ejercicio {

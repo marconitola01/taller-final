@@ -1,0 +1,28 @@
+// lenguaje python;  Dada una matriz cuadrada M de tamaño m ∗ m, la cual almacena números
+enteros generados de forma aleatoria, y siendo m un parámetro que se ingresa por
+consola, imprima todos los números que corresponden al rombo generado al interior
+de la matriz //
+
+import random;
+n= int(input("ingrese el valor de n"));
+mat = [None]*n;
+
+for x in range(0,n):
+    mat[x] = [None]*n
+    
+for x in range(0,n):
+    for y in range(0,n):
+        mat[x][y] = random.randint(1,1000)
+        
+mt = int(n/2)
+if (n%2 !=0):
+    for x in range (0,mt):
+        for y in range (mt-x,mt+x):
+            print[x][y]
+            
+            if(x != mt):
+                print mat[n-x-1][y]
+ 
+            else:
+                print "debe ser una matriz cuadrada impar"
+                print mat

@@ -1,4 +1,4 @@
-
+//programa que crea una matriz con numeros aleatorios y la imprime, luego hace un recorrido en espiral e imprime dicho recorrido//
 package ejercicio2;
 
 import java.io.BufferedReader;

@@ -7,6 +7,6 @@ public class ejercicio {
           Matriz5 ma=new Matriz5();
         ma.cargar();
         ma.imprimir();
-        ma.matrizcaracol();
+        ma.matrizEspiral();
     }   
 }

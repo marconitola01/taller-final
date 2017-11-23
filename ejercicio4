@@ -43,5 +43,5 @@ int matriz[MAX][MAX], col, reng, i=0, j=0;
           }
   }
   printf("\n\n\n");
-  
+  system("pause"); /*para que no se cierre el programa*/
     }

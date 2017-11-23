@@ -14,30 +14,32 @@ public class Matriz5 {
     private BufferedReader br;
     
     public void cargar() {
-        teclado=new Scanner(System.in);
-        System.out.print("Cuantas fila tiene la matriz:");
+        teclado=new Scanner(System.in); 
+        System.out.print("Cuantas fila tiene la matriz:"); // pedimos la cantidad de filas
         int filas=teclado.nextInt();
-        System.out.print("Cuantas columnas tiene la matriz:");
+        System.out.print("Cuantas columnas tiene la matriz:");// pedimos la cantidad de columnas
         int columnas=teclado.nextInt();
-        mat=new int[filas][columnas];
+        mat=new int[filas][columnas]; // nuestra matriz sera del tamaño ingresado por el usurario
+        // recorremos la matriz tanto filas como columnas
         for(int f=0;f<mat.length;f++) {
             for(int c=0;c<mat[f].length;c++) {
-                Random rs = new Random();
-                mat[f][c]=rs.nextInt(10);
+                Random rs = new Random(); // creamos nuestro objeto random
+                mat[f][c]=rs.nextInt(10); // usamos el objeto random para generar numeros aleatorios( los puse para que generara de 1 a 10)
             }
         }
     }
-    
+    // esta clase va a imprimir la matriz original
     public void imprimir() {
+        // volvemos a recorrer la matriz tanto filas como columnas
         for(int f=0;f<mat.length;f++) {
             for(int c=0;c<mat[f].length;c++) {
-                System.out.print(mat[f][c]+" ");
+                System.out.print(mat[f][c]+" "); // imprimimos la matriz 
             }
             System.out.println();
         }
     }
-    
-    public void matrizcaracol(){
+    // esta calse hara el recorrido es espiral
+    public void matrizEspiral(){
           int x = 0; //Para manejar las filas
       int y = 0; //Para manejar las columnas
       int flag = 0;  //Bandera para saber que recorrido se debe realizar
@@ -46,7 +48,7 @@ public class Matriz5 {
       int elementos = mat.length * mat[0].length;
  
       // Recorrido en espiral
-      System.out.println("\nMostrando recorrido en espiral");
+      System.out.println("\nrecorrido en espiral");
       while (n < elementos) {
          
          switch (flag) {

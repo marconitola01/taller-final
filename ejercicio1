@@ -3,14 +3,16 @@ enteros generados de forma aleatoria, y siendo m un parámetro que se ingresa po
 consola, imprima todos los números que corresponden al rombo generado al interior
 de la matriz //
 
-import random;
-n= int(input("ingrese el valor de n"));
-mat = [None]*n;
 
-for x in range(0,n):
+import random;     #importamos la libreria random de python
+
+n= int(input("ingrese el valor de n"));     # pedimos al usuario que ingrese n en este caso sera el tamaño de la matriz
+mat = [None]*n;    #
+
+for x in range(0,n):          # hacemos un ciclo for que comienze en cero y termine en n
     mat[x] = [None]*n
     
-for x in range(0,n):
+for x in range(0,n):     # este sera el metodo para llenar la matriz con numeros aleatorios
     for y in range(0,n):
         mat[x][y] = random.randint(1,1000)
         

@@ -7,24 +7,27 @@ de la matriz //
 import random;     #importamos la libreria random de python
 
 n= int(input("ingrese el valor de n"));     # pedimos al usuario que ingrese n en este caso sera el tamaño de la matriz
-mat = [None]*n;    #
+mat = [None]*n;    #para crear una matriz creamos una lista vacia y la multiplicamos por n
 
-for x in range(0,n):          # hacemos un ciclo for que comienze en cero y termine en n
-    mat[x] = [None]*n
+for x in range(0,n):          # hacemos un ciclo for que comienze en cero y termine en n para recorrer la matriz
+    mat[x] = [None]*n         # a la lista en posicion x se le asigna una nueva lista vacia para crear la matriz 
     
 for x in range(0,n):     # este sera el metodo para llenar la matriz con numeros aleatorios
-    for y in range(0,n):
-        mat[x][y] = random.randint(1,1000)
+    for y in range(0,n):  # recorremos la matriz segun filas y columnas
+        mat[x][y] = random.randint(1,1000) # usamos el random para generar numeros aleatorios
         
-mt = int(n/2)
-if (n%2 !=0):
-    for x in range (0,mt):
-        for y in range (mt-x,mt+x):
-            print[x][y]
+
+mt = int(n/2) # como necesitamos formar un rombo mt recibira la fila de la mitad diviendo n en 2
+              # para imprimir la figura rombo necesitamos que la matrriz sea cuadrada impar
+
+if (n%2 !=0): # con esta condicion validamos si n es impar
+    for x in range (0,mt): # para recorrer la matriz
+        for y in range (mt-x,mt+x):# para recorrer la matriz
+            print[x][y] # para imprimir la matriz
             
             if(x != mt):
-                print mat[n-x-1][y]
+                print mat[n-x-1][y] # imprimiremos los numeros que esten dentro de la figura rombo
  
-            else:
+            else:  # dado el caso de que n no sea impar botara error
                 print "debe ser una matriz cuadrada impar"
                 print mat

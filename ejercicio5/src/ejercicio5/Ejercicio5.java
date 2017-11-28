@@ -26,7 +26,7 @@ public class Ejercicio5{
 	public static void imprimenatural(int [][] matrix){
 		for (int i = 0; i < matrix.length; i++) {
 		for (int j = 0; j < matrix[i].length; j++) {
-		System.out.print("[" + matrix[i][j] + "]");
+		System.out.print(" " + matrix[i][j] + " ");
 	        }
 	        System.out.println("");
 	    }
@@ -38,7 +38,7 @@ public class Ejercicio5{
 			for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 			if (i+j >= (n/2)-1 && i+(n/2) >= j && j+(n/2) >= i && i+j <= (n/2)+n-1){ //limites del rombo para una matriz par
-				System.out.print("[" + matrix[i][j] + "]");
+				System.out.print(" " + matrix[i][j] + " ");
 					}
 				else{
 						System.out.print("   ");
@@ -51,7 +51,7 @@ public class Ejercicio5{
 			 for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i+j >= (n/2) && i+(n/2) >= j && j+(n/2) >= i && i+j <= (n/2)+n-1){ //limites del rombo para una matriz impar
-						System.out.print("[" + matrix[i][j] + "]");
+						System.out.print(" " + matrix[i][j] + " ");
 						}
 						else{
 							System.out.print("   ");

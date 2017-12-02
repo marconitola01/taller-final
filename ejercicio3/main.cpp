@@ -67,7 +67,7 @@ cout <<"\nlos numeros aleatorios son: \n\n";
 	
 	//pritn counters and subsets 
 	
-	cout <<"\n\n cantidad numeros pares: " + NumberToString(npar )+ "\n\n"cout <<" contidad numeros impares  son: " + NumberToString(nimpar) + "\n\n";
+	cout <<"\n\n cantidad numeros pares: " + NumberToString(npar )+ "\n\n"; cout <<" contidad numeros impares  son: " + NumberToString(nimpar) + "\n\n";
 	cout <<"numeros negativos: " + NumberToString(nneg) + "\n\n";cout <<"numeros positivos: " + NumberToString(npos) + "\n\n";
 	cout <<"numeros pares: "+ cpar + "\n\n";cout <<"numeros impares:" + cimpar + "\n\n";
 	cout <<"los numeros negativos encontrados son:" + cneg + "\n\n";

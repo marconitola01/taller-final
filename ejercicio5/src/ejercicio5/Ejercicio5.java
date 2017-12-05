@@ -32,13 +32,13 @@ public class Ejercicio5{
 	    }
 	}
 	
-	// print diamond
+	// print diamond with parameters matrix and n
 	public static void imprimerombo(int [][] matrix, int n){
-		 if(n%2 == 0){
+		 if(n%2 == 0){ //for pair matrix
 			for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 			if (i+j >= (n/2)-1 && i+(n/2) >= j && j+(n/2) >= i && i+j <= (n/2)+n-1){ //limites del rombo para una matriz par
-				System.out.print(" " + matrix[i][j] + " ");
+				System.out.print(" " + matrix[i][j] + " "); //print matrix
 					}
 				else{
 						System.out.print("   ");
@@ -47,7 +47,7 @@ public class Ejercicio5{
 				System.out.println(" ");
 			}
 		 }
-		 else{
+		 else{   //for impair matrix
 			 for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i+j >= (n/2) && i+(n/2) >= j && j+(n/2) >= i && i+j <= (n/2)+n-1){ //limites del rombo para una matriz impar

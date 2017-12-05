@@ -1,12 +1,12 @@
-// main desde el cual invocaremos los metodos//
+// main for run our program//
 package ejercicio2;
 
 public class ejercicio {
      public static void main(String[] ar) {
-      // invocaremos los metods para correr el programa
+      // we call the methods 
           Matriz5 ma=new Matriz5();
-        ma.cargar();//metodo que carga la matriz de numeros 
-        ma.imprimir();//metodo que imprime la matriz original
-        ma.matrizEspiral();//metodo que hace el recorrido en espiral y imprime el recorrido
+        ma.cargar();//method that loads with number the ,atrix 
+        ma.imprimir();//method that prints the original matrix
+        ma.matrizEspiral();//method that spirals and prints the route
     }   
 }

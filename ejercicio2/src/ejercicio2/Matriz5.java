@@ -7,7 +7,7 @@ import java.util.Scanner; //librerias
 
 
     
-   
+//class matriz   
 public class Matriz5 {
     private Scanner teclado;   // object
     private int[][] mat;       // matix

@@ -24,21 +24,21 @@ int matriz[MAX][MAX], col, reng, i=0, j=0;
   /* print the matriz*/
   printf("\n\n\t\tMatriz original");
   printf("\n\n");
-  for(i = 0;i < reng;i++){
-      printf("\n\t\t");
-      for(j = 0;j < col;j++){
-          printf("  %6d  ", matriz[i][j]);
+  for(i = 0;i < reng;i++){ //cycle for
+      printf("\n\t\t");     
+      for(j = 0;j < col;j++){  //cycle for
+          printf("  %6d  ", matriz[i][j]); //print original matrix
           }
   }
  /*print the transposed matrix */
   printf("\n\n\t\tMatriz transpuesta");
   printf("\n\n");
-  for(i = 0;i < col;i++){
-      printf("\n\t\t");
-      for(j = 0;j < reng;j++){
+  for(i = 0;i < col;i++){ //cycle for
+      printf("\n\t\t");   
+      for(j = 0;j < reng;j++){  //cycle for
           printf("  %6d  ", matriz[j][i]); /*we invert the rows and columns*/
           }
   }
-  printf("\n\n\n");
+  printf("\n\n\n"); //print an space
   system("pause");/*stop the program*/
 }

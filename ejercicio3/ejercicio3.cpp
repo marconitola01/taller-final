@@ -1,3 +1,8 @@
+/*Dada una matriz cuadrada M tamaño m ∗ m, la cual almacena números
+enteros generados de forma aleatoria, y siendo m un parámetro ingresado por consola,
+realice un programa que determine la cantidad de numeros pares, impares, positivos
+y negativos, y además imprima la lista de cada uno de los subconjuntos.*/
+
 #include <stdlib.h>
 #include<stdio.h>
 #include <iostream>

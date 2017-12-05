@@ -23,7 +23,7 @@ public class Ejercicio5{
 		
 	
 	//print full matrix(original)
-	public static void imprimenatural(int [][] matrix){
+	public static void imprime(int [][] matrix){
 		for (int i = 0; i < matrix.length; i++) {
 		for (int j = 0; j < matrix[i].length; j++) {
 		System.out.print(" " + matrix[i][j] + " ");
@@ -67,14 +67,14 @@ public class Ejercicio5{
 		BufferedReader br = new BufferedReader (new InputStreamReader(System.in)); //object for keep dates
 		BufferedWriter bw = new BufferedWriter (new OutputStreamWriter(System.out)); //object for print
 			
-		bw.write("Escriba el tamaño de la Matriz: "); // we ask the value for size
+		bw.write("Escriba el tamaÃ±o de la Matriz: "); // we ask the value for size
 		bw.flush();	
 		int m = Integer.parseInt(br.readLine());	// m will be going the size of the matrix
 		int [][] matrix = new int [m][m];               // we assign the size   
 			
 		llena(matrix, m, m);                            //call the method "llena"
 		System.out.println("\n matriz original: \n");   
-		imprimenatural(matrix);                        // we call the method "imprime natural" for print the original matrix  
+		imprime(matrix);                        // we call the method "imprime natural" for print the original matrix  
 		System.out.println("\n rombo \n");
 		imprimerombo(matrix , m);                      // call method for print the diamond    
 			

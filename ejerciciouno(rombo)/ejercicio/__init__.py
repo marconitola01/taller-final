@@ -25,7 +25,7 @@ if filas%2 != 0:  #the matrix must be square (par o impar)
   
     for f in range(0,filas): #par
         for c in range(0,filas):
-            if (f+c>=(mt) and f+(mt)>= c and c+(mt)>= f and f+c<=(mt)+filas-1):
+            if (f+c>=(mt) and f+(mt)>= c and c+(mt)>= f and f+c<=(mt)+filas-1): #invert each position
                 print(matriz[f][c],end=" ")
             else:
                 matriz[f][c] = " "
@@ -38,5 +38,5 @@ else: #impar
                 print(matriz[f][c],end=" ") #print each position
             else:
                 matriz[f][c] = " "
-                print(matriz[f][c],end=" ")  #invert each position
+                print(matriz[f][c],end=" ")  #print
         print("")   #print an space

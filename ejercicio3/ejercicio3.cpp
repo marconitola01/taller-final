@@ -14,21 +14,21 @@ string NumberToString(int pNumber){
 }
 // main and declaration of variables
 int main(int argc, char* argv[]){
-int m = 0 ;int npar = 0 ;int nimpar = 0;int npos = 0;int nneg = 0 ;int nume;
-string cpar, cimpar, cpos, cneg, x;
+int m = 0 ;int npar = 0 ;int nimpar = 0;int npos = 0;int nneg = 0 ;int nume; /*variables*/
+string cpar, cimpar, cpos, cneg, x;  
 
 //matrix and define it's size
-cout << "\n\ningrese las dimenciones de la Matriz: ";
+cout << "\n\ningrese las dimenciones de la Matriz: ";   /*we ask value for size*/
 cin >> m ;
-int matriz [m][m];
+int matriz [m][m];      /*we define the size of the matrix*/
 
 //fill matrix with random numbers 
-cout <<"\nlos numeros aleatorios son: \n\n";
+cout <<"\nlos numeros aleatorios son: \n\n";   /*generate random numbers*/
 	
-	for (int i= 0 ;i<m ;i++){
-	for (int j= 0 ;j<m ;j++){
-	         nume = 1+rand()%10;
-	         matriz[i][j] = nume;
+	for (int i= 0 ;i<m ;i++){    /*cycle for*/
+	for (int j= 0 ;j<m ;j++){    /*cycle for*/
+	         nume = 1+rand()%10;     /*we define the range of ramdom numbers*/
+	         matriz[i][j] = nume;      
 		}
 	}
 // print the matrix	
@@ -54,14 +54,14 @@ cout <<"\nlos numeros aleatorios son: \n\n";
 				cimpar = cimpar+ NumberToString(matriz[i][j]) + ",";	
 			}
 			if(matriz[i][j]< 0 ){
-				//negative numbers (-)
+				//negative numbers
 				nneg ++;
 				cneg = cneg + NumberToString(matriz[i][j]) + ",";
 			}
 			else if(matriz[i][j]>= 0){
-				//positive numbers (+)
+				//positive numbers
 				npos++;
-				cpos = cpos + NumberToString(matriz[i][j]) + ",";			
+				cpos = cpos + NumberToString(matriz[i][j]) + ","; 			
 			}
 		}}
 	

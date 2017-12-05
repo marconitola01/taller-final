@@ -36,7 +36,7 @@ int matriz[MAX][MAX], col, reng, i=0, j=0;
   for(i = 0;i < col;i++){
       printf("\n\t\t");
       for(j = 0;j < reng;j++){
-          printf("  %6d  ", matriz[j][i]); /*we invert the rows and columns
+          printf("  %6d  ", matriz[j][i]); /*we invert the rows and columns*/
           }
   }
   printf("\n\n\n");

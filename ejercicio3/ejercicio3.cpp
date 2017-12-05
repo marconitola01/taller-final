@@ -41,24 +41,24 @@ cout <<"\nlos numeros aleatorios son: \n\n";   /*generate random numbers*/
 	}
 		
 // subsets   
-	for(int i = 0;i<m;i++){
-	for(int j = 0; j<m;j++){
-	if(matriz[i][j]%2 == 0){
+	for(int i = 0;i<m;i++){  /*cycle for*/
+	for(int j = 0; j<m;j++){  /*cycle for*/
+	if(matriz[i][j]%2 == 0){   // the number in this position should be pair 
 				//pair numbers
 				npar++;
 				cpar = cpar + NumberToString(matriz[i][j]) + ",";
 			}
-			else if (matriz[i][j]%2 != 0){
+			else if (matriz[i][j]%2 != 0){  //we check's if the number is impair
 				//impair numbers
 				nimpar ++ ;
 				cimpar = cimpar+ NumberToString(matriz[i][j]) + ",";	
 			}
-			if(matriz[i][j]< 0 ){
+			if(matriz[i][j]< 0 ){  // for negative numbers, we check's if it's negative
 				//negative numbers
 				nneg ++;
 				cneg = cneg + NumberToString(matriz[i][j]) + ",";
 			}
-			else if(matriz[i][j]>= 0){
+			else if(matriz[i][j]>= 0){ // for positive, we check's if it's positive
 				//positive numbers
 				npos++;
 				cpos = cpos + NumberToString(matriz[i][j]) + ","; 			
